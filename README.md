@@ -3,68 +3,51 @@
 
 ## Aim:
 To write a C# program to find whether the given string is a Palindrome or not.
-
 ## Algorithm:
-Step1:
+1.Start the program.
 
-Start
+2.Get the string value and read the string.
 
-Step2:
+3.Use loop over the entire string and reverse it.
 
-Create a class and declare variable with string datatype
+4.Use condional statement for checking the reversed string.
 
-Step3:
+5.Print whether the string is palindrome or not a palindrome.
 
-Converts the given string into lowercase
-
-Step4:
-
-Iterate the string forward and backward, compare one character at a time
-
-Step5:
-
-till middle of the string is reached
-
-Step6:
-
-stop
-
-
+6.End the program.
 
 ## Program:
-```c#
-using System;  
-                      
-public class Palindrome  
-{  
-    public static void Main()  
-    {  
-        string s;
-        s=Console.ReadLine();
-        Boolean flag = true;  
-          
-        
-        s = s.ToLower();  
-          
-    
-        for(int i = 0; i < s.Length/2; i++){  
-            if(s[i] != s[s.Length-i-1]){  
-                flag = false;  
-                break;  
-            }  
-        }  
-        if(flag)  
-            Console.WriteLine("Given string is palindrome");  
-        else  
-            Console.WriteLine("Given string is not a palindrome");  
-    }  
-} 
-```
+~~~
+using System;
+namespace exp2
+{
+    public class Palindrome
+    {
+        static void Main(string[] args)
+        {
+            string word, reverse = "";
+            word = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("before reverse:" + word);
+            for (int i = word.Length - 1; i >= 0; i--)
+            {
+                reverse += word[i];
+            }
+            if (reverse == word)
+            {
+                Console.WriteLine("{0} it is palindrome", reverse);
+            }
+            else
+            {
+                Console.WriteLine("{0} its not palindrome", reverse);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+~~~
 
 ## Output:
-
-![image](PALINDROME.PNG)
-
+![output](./p.png)
 
 ## Result:
 Thus the C# program to display whether the given string is Palindrome or not is executed successfully.
