@@ -17,7 +17,7 @@ To write a C# program to find whether the given string is a Palindrome or not.
 6.End the program.
 
 ## Program:
-~~~
+~~~c#
 using System;
 namespace exp2
 {
