@@ -47,7 +47,7 @@ namespace exp2
 ~~~
 
 ## Output:
-![output](./p.png)
+![output](./PALINDROME.png)
 
 ## Result:
 Thus the C# program to display whether the given string is Palindrome or not is executed successfully.
